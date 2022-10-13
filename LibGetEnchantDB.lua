@@ -1,4 +1,7 @@
-LibGetEnchantDB = {
+local lib = LibStub:GetLibrary("LibGetEnchant-1.0")
+if not lib then return end
+
+lib.LibGetEnchantDB = {
 	[1] = "Rockbiter 3",
 	[2] = "Frostbr& 1",
 	[3] = "Flametongue 3",
