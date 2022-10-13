@@ -1,7 +1,6 @@
-local MAJOR_VERSION = "LibGetEnchant-1.0"
-local MINOR_VERSION = 1
-if not LibStub then error(MAJOR_VERSION .. " requires LibStub.") end
-local lib = LibStub:NewLibrary(MAJOR_VERSION, MINOR_VERSION)
+local MAJOR, MINOR = "LibGetEnchant-1.0", 1
+assert(LibStub, MAJOR.." requires LibStub")
+local lib = LibStub:NewLibrary(MAJOR, MINOR)
 if not lib then return end
 
 function lib.GetEnchant(enchantID)
